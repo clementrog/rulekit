@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
       p_user_id: null,
       p_identity_hash: identityHash,
       p_vote_type: voteType,
-    });
+    } as any);
 
     if (error) {
       console.error('Error calling cast_vote:', error);
